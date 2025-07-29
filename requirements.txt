@@ -1,0 +1,8 @@
+streamlit
+groq
+requests
+python-dotenv
+langgraph
+langchain
+pytest
+pymupdf
