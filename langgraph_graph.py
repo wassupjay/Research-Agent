@@ -118,7 +118,7 @@ def synthesizer_node(state: Dict) -> Dict:
 
     pdf_context = state.get("pdf_text", "")
     if pdf_context:
-        partial_summaries.append(f"📎 Context from PDF:\n{pdf_context[:3000]}")
+        partial_summaries.append(f" Context from PDF:\n{pdf_context[:3000]}")
 
     for finding in state["findings"]:
         try:
