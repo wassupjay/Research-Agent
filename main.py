@@ -1,6 +1,6 @@
 import streamlit as st
 from langgraph_graph import run_research_agent
-import fitz  # PyMuPDF
+import fitz  
 
 st.set_page_config(page_title="Research Agent", layout="wide")
 st.title("Generative AI Research Assistant")
