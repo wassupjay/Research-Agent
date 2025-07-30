@@ -91,7 +91,7 @@ def gatherer_node(state: Dict) -> Dict:
 
 #Scoring
 def rate_confidence(text: str) -> float:
-    prompt = f"Rate your confidence (0–100) in the factual accuracy of the following answer. Respond with just a number:\n\n{text}"
+    prompt = f"Rate your confidence (0-100) in the factual accuracy of the following answer. Respond with just a number:\n\n{text}"
     try:
         response = client.chat.completions.create(
             model="llama3-8b-8192",
