@@ -5,7 +5,7 @@ import fitz
 st.set_page_config(page_title="Research Agent", layout="wide")
 st.title("Generative AI Research Assistant")
 
-# Input: Topic + Optional PDF
+#Input: Topic+Optional PDF
 topic = st.text_input("Enter your research topic or question", placeholder="e.g., Impact of AI on healthcare")
 pdf = st.file_uploader("Optionally upload a PDF for additional context", type=["pdf"])
 
