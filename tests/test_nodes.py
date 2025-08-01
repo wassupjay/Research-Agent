@@ -1,7 +1,7 @@
 import pytest
 from langgraph_graph import planner_node, gatherer_node, synthesizer_node
 
-# Mock state input
+#  state input
 mock_state = {"topic": "Impact of AI on education"}
 
 def test_planner_node():
