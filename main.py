@@ -9,14 +9,14 @@ st.title("Generative AI Research Assistant")
 topic = st.text_input("Enter your research topic or question", placeholder="e.g., Impact of AI on healthcare")
 pdf = st.file_uploader("Optionally upload a PDF for additional context", type=["pdf"])
 
-# Extract PDF Text
+#Extract PDF Text
 pdf_text = ""
 if pdf is not None:
     with fitz.open(stream=pdf.read(), filetype="pdf") as doc:
         for page in doc:
             pdf_text += page.get_text()
 
-#  Run Agent
+#Agent
 if st.button("Start Research") and topic:
     with st.spinner("Running the research agent..."):
         try:
