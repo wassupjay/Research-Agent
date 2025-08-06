@@ -1,5 +1,4 @@
 #for with confidence scoring and PDF input
-
 import os
 import requests
 from typing import Dict, List, TypedDict
