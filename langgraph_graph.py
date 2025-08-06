@@ -34,7 +34,7 @@ def planner_node(state: Dict) -> Dict:
     subquestions = [q.strip("- ").strip() for q in questions if q.strip()]
     return {"topic": topic, "subquestions": subquestions}
 
-#Tavily Web Search
+#Tavilyy Search
 def tavily_search(query: str) -> List[Dict]:
     api_key = os.getenv("TAVILY_API_KEY")
     url = "https://api.tavily.com/search"
@@ -90,7 +90,7 @@ def gatherer_node(state: Dict) -> Dict:
     }
 
 #Scoring
-def rate_confidence(text: str) -> float:
+def rate_confidence(text:str)-> float:
     prompt = f"Rate your confidence (0-100) in the factual accuracy of the following answer. Respond with just a number:\n\n{text}"
     try:
         response = client.chat.completions.create(
